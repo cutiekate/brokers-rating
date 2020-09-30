@@ -15,7 +15,6 @@
   }
   #menu__toggle:checked ~ .menu__box {
     display: block;
-    left: 0;
   }
   
   .menu__btn {
@@ -54,6 +53,7 @@
   }
   
   .menu__box {
+    position: relative;
     display: none;
     height: 895px;
     width: 429px;
