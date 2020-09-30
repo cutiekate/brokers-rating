@@ -10,13 +10,47 @@
   <body>
     <div class="container navigate">
       <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Рейтинг брокеров<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Лучшие брокеры</a>
-            <a class="nav-item nav-link" href="#">Бонусы</a>
+        <div class="row">
+          <div class="burger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Рейтинг брокеров</a></li>
+              <li><a class="menu__item" href="#">Лучшие брокеры</a></li>
+              <li><a class="menu__item" href="#">Бонусы</a></li>
+              <li><a class="menu__item" href="#">Рейтинг брокеров</a></li>
+              <li><a class="menu__item" href="#">Лучшие брокеры</a></li>
+              <li><a class="menu__item" href="#">Бонусы</a></li>
+  
+            </ul>
           </div>
-        </nav>
+          <nav class="navbar navbar-expand-lg">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="#">Рейтинг брокеров<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">Лучшие брокеры</a>
+              <a class="nav-item nav-link" href="#">Бонусы</a>
+            </div>
+            <div class="navigate__logo-block">
+              <img src="images/logo.svg">
+              <p class="navigate__logo-name">Рейтинг Брокеров</p>
+            </div>
+            <div class="navigate__help">
+              <img src="images/operator-img.svg">
+              <div class="navigate__help-block">
+                <p class="navigate__help-text">Помощь в выборе</p>
+                <a class="navigate__help-tel"href="tel:+7 495 123 4567">+7 495 123 4567</a>
+              </div>
+  
+              <div class="navigate__button-login">
+                <a href="#">
+                  <img src="images/button-log-in.svg">
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
     
     </div>

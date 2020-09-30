@@ -2,7 +2,23 @@
 @import "fonts";
 @import "typography";
 @import "navigate";
+@import "burger-bar";
 
+p {
+  margin: 0;
+}
 .navbar {
   height: 80px;
 }
+.navbar-nav .nav-link {
+  font-family: Mplus 1p;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: $main-blue;
+}
+
+.navbar-nav {
+  padding-right: 30px;
+}
+
