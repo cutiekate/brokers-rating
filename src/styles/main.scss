@@ -1,7 +1,8 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "navigate";
 
-body {
-  background: $c-gray;
+.navbar {
+  height: 80px;
 }
