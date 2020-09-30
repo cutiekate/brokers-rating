@@ -1,0 +1,25 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.navigate {
+  min-width: 100%;
+  height: 80px;
+  background: #FFFFFF;
+  border: 1px solid #E5EBF0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 5px 5px 20px rgba(52, 54, 59, 0.15);
+          box-shadow: 5px 5px 20px rgba(52, 54, 59, 0.15);
+  overflow: hidden; }
+
+.navbar {
+  height: 80px; }
+
+/*# sourceMappingURL=main.css.map */
