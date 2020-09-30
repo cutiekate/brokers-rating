@@ -1,0 +1,20 @@
+.rating {
+    min-width: 100px;
+
+    &__header {
+        margin-top: 50px;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+        color: $main-blue;
+    }
+
+    &__desc {
+        font-family: "Open Sans";
+        font-size: 18px;
+        line-height: 33px;
+        color: $main-blue;
+        margin-top: 15px;
+    }
+}
