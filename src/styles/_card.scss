@@ -43,11 +43,11 @@
 }
 
 .card:last-of-type {
-    padding-right: 20px;
+    margin-right: 0
 }
 
-// @media screen and (max-width: 414px) {
-//     .card {
-        
-//     }
-// }
+@media screen and (max-width: 414px) {
+    .card {
+      margin-right: 0;
+    }
+}
