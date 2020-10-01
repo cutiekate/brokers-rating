@@ -399,7 +399,43 @@ h1 {
           transform: scale(1.05); }
 
 .card:last-of-type {
-  padding-right: 20px; }
+  margin-right: 0; }
+
+@media screen and (max-width: 414px) {
+  .card {
+    margin-right: 0; } }
+
+.best-deals__header {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  color: #213991;
+  margin-top: 90px; }
+
+.carousel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 340px;
+  height: 340px; }
+  .carousel-item__head {
+    height: 120px;
+    width: 338px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-shadow: 5px 5px 20px rgba(52, 54, 59, 0.15);
+            box-shadow: 5px 5px 20px rgba(52, 54, 59, 0.15);
+    border-radius: 5px; }
+  .carousel-item__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 body {
   background: #F8F8F8 !important; }
