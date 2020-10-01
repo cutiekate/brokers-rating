@@ -339,6 +339,68 @@ h1 {
     .rating__button {
       margin-right: 0; } }
 
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  height: 70px;
+  -webkit-box-shadow: 5px 5px 20px rgba(52, 54, 59, 0.15);
+          box-shadow: 5px 5px 20px rgba(52, 54, 59, 0.15);
+  border-radius: 5px;
+  margin-right: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  padding-right: 0 !important; }
+  .card__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 80%;
+        flex-shrink: 80%; }
+  .card__content p {
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 0;
+    margin-left: 15px;
+    color: #213991; }
+  .card__button {
+    -webkit-box-shadow: 5px 5px 20px rgba(52, 54, 59, 0.15);
+            box-shadow: 5px 5px 20px rgba(52, 54, 59, 0.15);
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.card:hover {
+  -webkit-box-shadow: 10px 5px 20px rgba(52, 54, 59, 0.15);
+          box-shadow: 10px 5px 20px rgba(52, 54, 59, 0.15);
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05); }
+
+.card:last-of-type {
+  padding-right: 20px; }
+
 body {
   background: #F8F8F8 !important; }
 
@@ -361,6 +423,9 @@ p {
 
 .navbar-nav {
   padding-right: 30px; }
+
+.col-sm {
+  position: static !important; }
 
 @media screen and (max-width: 1024px) {
   .navbar-nav {
