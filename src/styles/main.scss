@@ -5,6 +5,9 @@
 @import "burger-bar";
 @import "rating";
 
+body {
+  background: $bgc !important;
+}
 p {
   margin: 0;
 }

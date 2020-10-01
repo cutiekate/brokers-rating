@@ -1,8 +1,7 @@
 .rating {
     min-width: 100px;
-
     &__header {
-        margin-top: 50px;
+        margin-top: 120px;
         font-family: "Open Sans";
         font-weight: bold;
         font-size: 36px;
@@ -16,6 +15,11 @@
         line-height: 33px;
         color: $main-blue;
         margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    &__table {
+        background: $white;
     }
 
     &__thead {
@@ -24,7 +28,6 @@
         font-size: 16px;
         line-height: 150%;
         color: $main-blue;
-        text-align: center;
     }
 
     &__numbers-green,
@@ -47,7 +50,6 @@
         background: $white;
         color: $green;
         border: 1px solid $green;
-        box-sizing: content-box;
     }
     &__brocker {
         display:flex;
@@ -66,6 +68,7 @@
 
     &__stars {
         display: flex;
+        padding-top: 20px;
     }
 
     &__stars > span {
@@ -81,5 +84,61 @@
         background: $green;
         border: none;
         color: $white;
+        margin-right: -70px;
+        transition: 0.5s linear;
+        cursor: pointer;
+    }
+
+    &__button:hover {
+        border: 1px solid $green;
+        background: $white;
+        color: $green;
+        outline-color: lightgrey;
+    }
+
+    &__feedback {
+        display: flex;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    &__feedback > span {
+        font-family: "Open Sans";
+        font-size: 18px;
+        line-height: 150%;
+        color: $main-blue;
+        padding-left: 11px;
+    }
+
+    &__review {
+        font-family: "Open Sans";
+        font-size: 16px;
+        line-height: 150%;
+        color: $main-blue;
+        text-decoration: underline;
+    }
+    
+    &__review p {
+        padding-top: 15px;
+    }
+
+    &__table-row {
+        transition: 0.5s;
+    }
+
+    &__table-row:hover {
+        box-shadow: 5px 5px 20px rgba(52, 54, 59, 0.15);
+    }
+
+    @media screen and(max-width: 1024px) {
+        &__button {
+            margin-right: -40px;
+        }
+    }
+
+    @media screen and(max-width: 768px) {
+        &__button {
+            margin-right: 0;
+        }
     }
 }
