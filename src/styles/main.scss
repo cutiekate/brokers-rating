@@ -4,6 +4,7 @@
 @import "navigate";
 @import "burger-bar";
 @import "rating";
+@import "card";
 
 body {
   background: $bgc !important;
@@ -29,6 +30,10 @@ p {
 
 .navbar-nav {
   padding-right: 30px;
+}
+
+.col-sm {
+  position: static !important;
 }
 
 
