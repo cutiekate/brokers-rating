@@ -17,4 +17,69 @@
         color: $main-blue;
         margin-top: 15px;
     }
+
+    &__thead {
+        background: $light-gray;
+        font-family: "Open Sans";
+        font-size: 16px;
+        line-height: 150%;
+        color: $main-blue;
+        text-align: center;
+    }
+
+    &__numbers-green,
+    &__numbers {
+        width: 25px;
+        height: 25px;
+        background: $green;
+        border-radius: 50%;
+        color: $white;
+        font-family: "Open Sans";
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    &__numbers {
+        background: $white;
+        color: $green;
+        border: 1px solid $green;
+        box-sizing: content-box;
+    }
+    &__brocker {
+        display:flex;
+        align-items: center;
+    }
+
+    &__brocker-name {
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        color: $main-blue;
+        margin-bottom: 0;
+        padding-left: 10px;
+    }
+
+    &__stars {
+        display: flex;
+    }
+
+    &__stars > span {
+        width: 16px;
+        height: 16px;
+        background: url("../images/rating-star.svg") no-repeat;
+    }
+
+    &__button {
+        width: 190px;
+        height: 50px;
+        border-radius: 100px;
+        background: $green;
+        border: none;
+        color: $white;
+    }
 }

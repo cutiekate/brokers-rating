@@ -56,9 +56,9 @@
     position: relative;
     display: none;
     height: 895px;
-    width: 429px;
+    width: 410px;
     margin-top: 29px;
-    padding: 29px 73px;
+    padding: 29px 35px;
     list-style: none;
     background: #FFFFFF;
   }
@@ -68,10 +68,43 @@
     padding: 12px 24px;
     color: $main-blue;
     font-family: "Mplus 1p";
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
     text-decoration: none;
   }
   .menu__item:hover {
-    background-color: #CFD8DC;
+    color: $green;
+    font-weight: 800;
+    text-decoration: none;
   }
+
+  @media screen and(max-width: 1024px) {
+    .menu__box {
+      width: 380px;
+    }
+  }
+
+  @media screen and(max-width: 768px) {
+    .menu__box {
+      width: 361px;
+      padding: 0;
+    }
+
+    .menu__item {
+      padding: 2px 10px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .menu__box {
+      width: 357px;
+    }
+  }
+
+  @media screen and(max-width: 320px) {
+    .menu__box {
+      width: 304px;
+    }
+  }
+
+  

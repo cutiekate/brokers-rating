@@ -28,3 +28,27 @@ p {
   padding-right: 30px;
 }
 
+
+@media screen and(max-width: 1024px) {
+  .navbar-nav {
+    padding-right: 0;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .navbar-expand-lg {
+    margin-left: 2px;
+  }
+  .navbar-nav {
+    display: none !important;
+  }
+}
+
+@media screen and(max-width: 375px) {
+  .navbar {
+    flex-wrap: nowrap !important;
+  }
+}
+
+
+
