@@ -17,4 +17,19 @@
         display: flex;
        
     }
+    &__link {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        padding-right: 50px;
+
+    }
+
+    &__link a {
+        font-family: "Open Sans";
+        font-size: 18px;
+        line-height: 150%;
+        color: $main-blue;
+
+    }
 }
