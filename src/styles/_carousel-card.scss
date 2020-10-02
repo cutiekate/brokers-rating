@@ -1,0 +1,128 @@
+.carousel-card{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 340px;
+    background: $white;
+    border: 1px solid #E5EBF0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.5s;
+
+
+    
+    &__head {
+        height: 120px;
+        width: 338px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 5px 5px 20px rgba(52, 54, 59, 0.15);
+        border-radius: 5px;
+    }
+
+    &__head div p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: $main-blue;
+        margin-bottom: 0;
+    }
+
+    &__head div p:first-child {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        height: 220px;
+        flex-direction: column;
+    }
+
+    &__body div:first-child {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__body div:first-child span {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 150%;
+        color: $main-blue;
+    }
+
+    &__body div:nth-child(2) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__body div:nth-child(2) {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        color: $main-blue;
+    }
+
+    &__button {
+        width: 190px;
+        height: 50px;
+        background: $green;
+        border-radius: 100px;
+        border: none;
+        box-sizing: border-box;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        color: $white;
+        margin: 30px auto 0;
+        transition: background 1s;
+    }
+
+    &__button:hover {
+        border: 1px solid $green;
+        background: $white;
+        color: $green
+    }
+
+    @media screen and(max-width: 1024px) {
+        &__head {
+            width: 279px;
+        }
+    }
+
+    @media screen and(max-width: 768px) {
+        &__head {
+            width: 200px;
+        }
+    }
+
+}
+
+.carousel-card:hover{
+    box-shadow: 5px 5px 20px rgba(52, 54, 59, 0.15);
+}
+
+@media screen and(max-width: 1024px) {
+    .carousel-card {
+        width: 280px;
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .carousel-card {
+        width: 200px;
+    }
+}

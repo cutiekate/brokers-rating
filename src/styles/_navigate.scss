@@ -72,6 +72,7 @@ position: fixed;
     &__help {
         padding-left: 30px;
     }
+
 }
 
 @media screen and(max-width: 768px){ 
@@ -150,6 +151,12 @@ position: fixed;
     
 }
 
+}
+
+@media screen and(max-width: 414px) {
+    .navigate {
+      
+    }
 }
     
 

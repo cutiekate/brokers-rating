@@ -6,5 +6,15 @@
         line-height: 49px;
         color: $main-blue;
         margin-top: 90px;
+        margin-bottom: 40px;
+    }
+
+    &__carousel {
+        padding-left: 25px;
+    }
+
+    &__carousel-card-group {
+        display: flex;
+       
     }
 }

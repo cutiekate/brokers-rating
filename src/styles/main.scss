@@ -6,7 +6,7 @@
 @import "rating";
 @import "card";
 @import "best-deals";
-@import "carousel-item";
+@import "carousel-card";
 
 body {
   background: $bgc !important;
@@ -19,7 +19,7 @@ p {
   position: fixed !important;
 }
 .navbar-expand-lg {
-  margin-left: 30px;
+  margin-left: 45px;
 }
 
 .navbar-nav .nav-link {
@@ -43,15 +43,25 @@ p {
   .navbar-nav {
     padding-right: 0;
   }
+
+  .navbar-expand-lg {
+    margin-left: -25px;
+  }
 }
 
 @media screen and(max-width: 768px) {
   .navbar-expand-lg {
-    margin-left: 2px;
-  }
+    margin-left: -165px;
+}
   .navbar-nav {
     display: none !important;
   }
+}
+
+@media screen and(max-width: 414px) {
+  .navbar-expand-lg {
+    margin-left: -10px;
+}
 }
 
 @media screen and(max-width: 375px) {
