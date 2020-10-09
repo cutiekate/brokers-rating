@@ -1,5 +1,5 @@
 .rating {
-    min-width: 100px;
+
     &__header {
         margin-top: 120px;
         font-family: "Open Sans";
@@ -140,5 +140,14 @@
         &__button {
             margin-right: 0;
         }
+    }
+
+    @media screen and(max-width: 414px) {
+        &__header,
+        &__desc {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
     }
 }

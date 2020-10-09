@@ -21,7 +21,6 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-left: 20px;
     width: 26px;
     height: 26px;
   
@@ -81,10 +80,6 @@
     .menu__box {
       width: 380px;
     }
-
-    .menu__btn {
-      margin-left: -40px;
-    }
   }
 
   @media screen and(max-width: 768px) {
@@ -98,13 +93,13 @@
     }
 
     .menu__btn {
-      margin-left: -159px;
+      margin-left: 5px;
     }
   }
 
   @media screen and(max-width: 414px) {
     .menu__btn {
-      margin-left: 5px;
+      margin-left: 15px;
   }
   }
 

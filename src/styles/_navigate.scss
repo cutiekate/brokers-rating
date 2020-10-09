@@ -1,12 +1,13 @@
 
 .navigate {
-min-width: 100%;
+width: 100%;
 height: 80px;
 background: #FFFFFF;
 border: 1px solid #E5EBF0;
 box-sizing: border-box;
 box-shadow: 5px 5px 20px rgba(52, 54, 59, 0.15);
 position: fixed;
+z-index: 2;
 
 &__logo-block {
     display: flex;
@@ -36,7 +37,7 @@ position: fixed;
 &__help {
     display: flex;
     align-items: center;
-    padding-left: 89px;
+    padding-left: 110px;
 }
 
 &__help-block {
@@ -70,7 +71,7 @@ position: fixed;
     }
 
     &__help {
-        padding-left: 30px;
+        padding-left: 38px;
     }
 
 }
