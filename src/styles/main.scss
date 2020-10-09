@@ -41,6 +41,8 @@ p {
 }
 
 
+
+
 @media screen and(max-width: 1024px) {
   .navbar-nav {
     padding-right: 0;
@@ -70,7 +72,15 @@ p {
   .navbar {
     flex-wrap: nowrap !important;
   }
-}
 
+  .navbar-expand-lg {
+    margin-left: 9px;
+  }
+}
+@media screen and(max-width: 320px) {
+  .navbar-expand-lg {
+    margin-left: 17px;
+}
+}
 
 

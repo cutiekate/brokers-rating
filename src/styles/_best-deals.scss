@@ -32,4 +32,27 @@
         color: $main-blue;
 
     }
+
+    @media screen and(max-width: 414px){ 
+        &__header {
+            margin-top: 60px;
+        }
+
+        &__link {
+            margin-top: -20px;
+        }
+    }
+
+    @media screen and(max-width: 320px){ 
+        &__header {
+            font-size: 34px;
+            text-align: center;
+            line-height: 38px;
+            margin-top: 40px;
+        }
+
+        &__link {
+            margin-top: -20px;
+        }
+    }
 }

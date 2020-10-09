@@ -150,4 +150,11 @@
         }
         
     }
+
+    @media screen and(max-width: 320px) {
+        &__header {
+            font-size: 34px;
+        }
+        
+    }
 }
