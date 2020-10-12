@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Рейтинг брокеров</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -44,10 +44,8 @@
                 <a class="navigate__help-tel"href="tel:+7 495 123 4567">+7 495 123 4567</a>
               </div>
   
-              <div class="navigate__button-login">
-                <a href="#">
+              <div class="navigate__button-login" data-toggle="modal" data-target="#modal">
                   <img src="images/button-log-in.svg">
-                </a>
               </div>
             </div>
           </nav>
@@ -781,27 +779,102 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col col-lg col-md col-sm">
+          <div class="col-4">
             <a href="#" class="footer__logo">
               <img src="images/logo-footer.svg">
             </a>
           </div>
-          <div class="col col-lg col-md col-sm">
+          <div class="col-4">
             <div class="navbar-nav footer__nav">
-              <a class="nav-item nav-link" href="#">Рейтинг брокеров<span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#">Лучшие брокеры</a>
-              <a class="nav-item nav-link" href="#">Бонусы</a>
-              <a class="nav-item nav-link" href="#">Прогнозы</a>
+              <a class="nav-item nav-link footer__nav-link" href="#">Рейтинг брокеров<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link footer__nav-link" href="#">Лучшие брокеры</a>
+              <a class="nav-item nav-link footer__nav-link" href="#">Бонусы</a>
+              <a class="nav-item nav-link footer__nav-link" href="#">Прогнозы</a>
             </div>
           </div>
-          <div class="col col-lg col-md col-sm">
-            <p>Мы не передаем Ваши данные третьим лицам</p>
-            <a href="tel:+7-495-123-4567">тел +7-495-123-4567</a>
-            <p>с 10:00 до 19:00 Пн-Пт</p>
+          <div class="col-4 footer__mobile">
+            <p class="footer__text">Мы не передаем Ваши данные третьим лицам</p>
+            <a class="footer__tel" href="tel:+7-495-123-4567">тел +7-495-123-4567</a>
+            <p class="footer__text">с 10:00 до 19:00 Пн-Пт</p>
           </div>
+        </div>
+        <div class="row footer__line">
+        </div>
+        <div class="row footer__info">
+          <p class="footer__text">© 2020 РЕЙТИНГ БРОКЕРА. Все права защищены.</p>
+          <a href="#">
+            <p class="footer__text">Политика конфиденциальности</p>
+          </a>
         </div>
       </div>
     </footer>
+
+
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+    
+        <!-- содержимое модального окна login -->
+           <div class="modal-content" id="login-modal-content">
+             <div class="modal-header">
+              <p>
+                <a data-toggle="collapse" data-target=".multi-collapse" href="#collapseEnter" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Войти
+                </a>
+                <a data-toggle="collapse" data-target=".multi-collapse" href="#collapseRegistration" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Зарегистрирваться
+                </a>
+              </p>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+             </div>
+           
+             <div class="modal-body collapse multi-collapse" id="collapseEnter">
+             <form method="post" id="Login-Form" role="form">
+               <div class="form-group">
+                   <div class="input-group">
+                   <input name="email" type="email" class="form-control input-lg" placeholder="Email">
+                   </div>                      
+               </div>
+               <div class="form-group">
+                   <div class="input-group">
+                   <input name="password" id="login-password" type="password" class="form-control input-lg" placeholder="Пароль">
+                    </div>                      
+               </div>
+               <div class="checkbox">
+                 <label><input type="checkbox" value="" checked>Запомнить пароль</label>
+               </div>
+                 <button type="submit" class="modal-bth">Войти</button>
+             </form>
+           </div>
+          </div>
+           <!-- содержимое модального окна login -->
+           
+           <!-- содержимое модального окна signup -->
+
+                   
+           <div class="modal-body collapse multi-collapse" id="collapseRegistration">
+             <form method="post" role="form">
+               <div class="form-group">
+                   <div class="input-group">
+                   <input name="email" type="email" class="" placeholder="Enter Email"></div>                     
+               </div>
+               <div class="form-group">
+                   <div class="input-group">
+                   <input name="password" id="passwd" type="password" class="" placeholder="Enter Password">
+                   </div>                      
+               </div>
+               <div class="form-group">
+                   <div class="input-group">
+                   <input name="password" id="confirm-passwd" type="password" class="" placeholder="Retype Password">
+                   </div>                      
+               </div>
+               <button type="submit" class="modal-bth">Зарегистрироваться</button>
+             </form>
+           </div>
+          <!-- содержимое модального окна signup -->
+     </div>
+  </div>
+
   </body>
 
 
