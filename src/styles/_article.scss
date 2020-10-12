@@ -1,7 +1,4 @@
 .article {
-background: $white;
-border: 1px solid #E5EBF0;
-box-sizing: border-box;
 margin-top: 100px;
 margin-bottom: 46px;
 
@@ -11,6 +8,9 @@ margin-bottom: 46px;
     line-height: 150%;
     color: $main-blue;
     padding: 24px 53px 14px;
+    background: $white;
+    border: 1px solid #E5EBF0;
+    box-sizing: border-box;
 }
 
 &__area h3 {

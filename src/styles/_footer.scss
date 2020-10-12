@@ -1,3 +1,7 @@
 .footer {
     background: $dark-blue;
+
+    &__logo img {
+        margin-top: 33px;
+    }
 }

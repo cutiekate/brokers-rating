@@ -1,26 +1,42 @@
 
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay:true,
+        responsiveClass:true,
+        responsive:{
+            414:{
+                items:1,
+                nav:false
+            },
+            375:{
+                items:1,
+                nav:false
+            },
+            320:{
+                items:1,
+                nav:false
+            },
+            
+        
+            700:{
+                items:2,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:false,
+                // navText: ["<img src='images/prev.svg'>", "<img src='images/next.svg'>"],
+            }
+        }
+    })
+
+    $('.menu__btn').on('click', function(event){
+        $('.rating__header').toggleClass('opacity');
+        $('.rating__desc').toggleClass('opacity');
+        $('.rating__table').toggleClass('opacity');
+    });
+    
 });
 
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    autoplay:true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:false
-        },
-        600:{
-            items:2,
-            nav:false
-        },
-        1000:{
-            items:3,
-            nav:true,
-            loop:false
-        }
-    }
-})

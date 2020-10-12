@@ -13,8 +13,16 @@
 body {
   background: $bgc !important;
 }
+body,html {
+  overflow-x: hidden;
+}
+
 p {
   margin: 0;
+}
+
+.opacity {
+  opacity: 0.5;
 }
 .navbar {
   height: 80px;
@@ -38,6 +46,39 @@ p {
 
 .col-sm {
   position: static !important;
+}
+
+.owl-prev {
+  position: absolute;
+  top: 138px;
+}
+.owl-next {
+  position: absolute;
+  top: 138px;
+  left: 1128px;
+}
+
+.nav-item {
+  position: relative;
+  transition: 0.3s;
+}
+.nav-item:after {
+  transition: 0.5s;
+}
+
+.nav-item:focus {
+  font-weight: 800;
+}
+
+.nav-item:hover:after {
+  content: '';
+  display: inline-block;
+  width: 90%;
+  height: 2px;
+  background: $green;
+  position: absolute;
+  top: 30px;
+  left: 7px;
 }
 
 
