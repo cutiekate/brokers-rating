@@ -90,7 +90,7 @@ p {
   }
 
   .navbar-expand-lg {
-    margin-left: 30px;
+    margin-left: 13px;
   }
 }
 
@@ -125,3 +125,19 @@ p {
 }
 
 
+.modal-content {
+  background: $green !important;
+  border-radius: 5px;
+}
+.modal-bth {
+  width: 380px;
+  height: 70px;
+  background: $green;
+  border: 2px solid $white;
+  box-sizing: border-box;
+  box-shadow: 15px 5px 20px rgba(45, 175, 215, 0.2);
+  border-radius: 35px;
+  color: $white;
+  margin: 0 auto;
+
+}

@@ -4,4 +4,102 @@
     &__logo img {
         margin-top: 33px;
     }
+
+    &__nav {
+        margin-top: 30px;
+    }
+
+    &__nav-link {
+        font-family: "Open Sans",sans-serif;
+        font-size: 16px;
+        line-height: 200%;
+        color: rgba(255, 255, 255, 0.7) !important;
+        transition: 0.3s;
+    }
+
+    &__nav-link:hover:after {
+        display: none !important;
+    }
+
+    &__nav-link:hover {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: underline !important;
+        font-weight: 800;
+    }
+
+    &__text {
+        font-family: "Open Sans",sans-serif;
+        font-size: 14px;
+        line-height: 200%;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    &__text:first-child {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    &__tel {
+        font-family: "Open Sans",sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 200%;
+        color: rgba(255, 255, 255, 0.7);
+
+    }
+
+    &__line {
+        width: 1140px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.4);
+        margin-top: 30px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info p {
+        margin-top: 8px;
+    }
+
+    @media screen and(max-width: 1024px) {
+        &__line {
+            width: 960px;
+        }
+    }
+
+    @media screen and(max-width: 768px) {
+        &__line {
+            width: 715px;
+        }
+    }
+
+    
+    @media screen and(max-width: 414px) {
+        &__line {
+            width: 715px;
+        }
+
+        &__mobile {
+            min-width: 100%;
+        }
+
+        &__info {
+            justify-content: space-evenly;
+            align-items: start;
+            padding-bottom: 20px;
+        }
+    }
+
+    @media screen and(max-width: 320px) {
+        &__info {
+            padding-left: 10px;
+            justify-content: left;
+        }
+    }
+
+
+  
 }
