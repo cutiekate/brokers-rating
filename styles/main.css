@@ -160,6 +160,9 @@ h1 {
 #menu__toggle:checked ~ .menu__box {
   display: block; }
 
+.burger-bar {
+  padding-top: 3px; }
+
 .menu__btn {
   display: -webkit-box;
   display: -ms-flexbox;
