@@ -813,67 +813,56 @@
 
     <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-    
-        <!-- содержимое модального окна login -->
-           <div class="modal-content" id="login-modal-content">
-             <div class="modal-header">
-              <p>
-                <a data-toggle="collapse" data-target=".multi-collapse" href="#collapseEnter" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Войти
-                </a>
-                <a data-toggle="collapse" data-target=".multi-collapse" href="#collapseRegistration" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Зарегистрирваться
-                </a>
-              </p>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-             </div>
-           
-             <div class="modal-body collapse multi-collapse" id="collapseEnter">
-             <form method="post" id="Login-Form" role="form">
+           <div class="modal-content tabs" id="login-modal-content">
+              <ul class="tabs__caption">
+                <li class="active">Войти</li>
+                <li>Зарегистрироваться</li>
+              </ul>
+              <!-- содержимое модального окна login -->
+              <div class="modal-body tabs__content active">
+             <form id="Login-Form" role="form">
                <div class="form-group">
                    <div class="input-group">
-                   <input name="email" type="email" class="form-control input-lg" placeholder="Email">
+                   <input name="email" type="email" class="form__input" placeholder="Email">
                    </div>                      
                </div>
                <div class="form-group">
                    <div class="input-group">
-                   <input name="password" id="login-password" type="password" class="form-control input-lg" placeholder="Пароль">
+                   <input name="password" id="login-password" type="password" class="form__input" placeholder="Пароль">
                     </div>                      
                </div>
                <div class="checkbox">
-                 <label><input type="checkbox" value="" checked>Запомнить пароль</label>
+                 <label><input class="form__checkbox" type="checkbox" value="" checked>Запомнить пароль</label>
                </div>
-                 <button type="submit" class="modal-bth">Войти</button>
+                 <button class="modal-bth">Войти</button>
              </form>
-           </div>
-          </div>
-           <!-- содержимое модального окна login -->
+              </div>
+              <!-- содержимое модального окна login -->
            
-           <!-- содержимое модального окна signup -->
-
-                   
-           <div class="modal-body collapse multi-collapse" id="collapseRegistration">
-             <form method="post" role="form">
+              <!-- содержимое модального окна signup -->
+             <div class="modal-body tabs__content">
+             <form role="form">
                <div class="form-group">
                    <div class="input-group">
-                   <input name="email" type="email" class="" placeholder="Enter Email"></div>                     
+                   <input name="email" type="email" class="form__input" placeholder="Enter Email"></div>                     
                </div>
                <div class="form-group">
                    <div class="input-group">
-                   <input name="password" id="passwd" type="password" class="" placeholder="Enter Password">
+                   <input name="password" id="passwd" type="password" class="form__input" placeholder="Enter Password">
                    </div>                      
                </div>
                <div class="form-group">
                    <div class="input-group">
-                   <input name="password" id="confirm-passwd" type="password" class="" placeholder="Retype Password">
+                   <input name="password" id="confirm-passwd" type="password" class="form__input" placeholder="Retype Password">
                    </div>                      
                </div>
-               <button type="submit" class="modal-bth">Зарегистрироваться</button>
+               <button class="modal-bth">Зарегистрироваться</button>
              </form>
+             </div>
+             <!-- содержимое модального окна signup -->
            </div>
-          <!-- содержимое модального окна signup -->
-     </div>
-  </div>
+       </div>
+    </div>
 
   </body>
 
@@ -882,7 +871,7 @@
     
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
